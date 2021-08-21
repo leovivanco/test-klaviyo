@@ -1,39 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <!--   <div class="klaviyo-form-WtUuS2">
-  </div> -->
-
-
-
-  <form id="email_signup" action="//manage.kmail-lists.com/subscriptions/subscribe?a=RHx8XJ&g=WTxgDS" method="POST">
-    <input type="hidden" name="g" value="WTxgDS">
-    <input type="email" value="" name="email" id="k_id_email" placeholder="Your email" />
-    OTHER_FORM_CONTENT_HERE
-    <button type="submit">Subscribe</button>
-  </form>
-
-  <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
-
-  <!-- <form id="email_signup" class="klaviyo_styling klaviyo_gdpr_embed_WTxgDS"
-    action="//manage.kmail-lists.com/subscriptions/subscribe"
-    data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank"
-    novalidate="novalidate">
-    <input type="hidden" name="g" value="WTxgDS">
+<form id="email_signup" class="klaviyo_styling klaviyo_gdpr_embed_LIST_ID" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" novalidate="novalidate">
+    <input type="hidden" name="g" value="LIST_ID">
     <input type="hidden" name="$fields" value="$consent">
     <input type="hidden" name="$list_fields" value="$consent">
     <div class="klaviyo_field_group">
       <label for="k_id_email">Newsletter Sign Up</label>
       <input class="" type="email" value="" name="email" id="k_id_email" placeholder="Your email" />
-
+      <div class="klaviyo_field_group klaviyo_form_actions">
+        <div class="klaviyo_helptext"> How would you like to hear from us? (please select at least one option) </div>
+        <input type="checkbox" name="$consent" id="consent-email" value="email">
+        <label for="consent-email">Email</label><br>
+        <input type="checkbox" name="$consent" id="consent-web" value="web">
+        <label for="consent-web">Online advertisements</label>
+        <div class="klaviyo_helptext klaviyo_gdpr_text"> We use email and targeted online advertising to send you product and services updates, promotional offers and other marketing communications based on the information we collect about you, such as
+          your email address, general location, and purchase and website browsing history. <br>
+          <br>
+          We process your personal data as stated in our Privacy Policy {Insert privacy policy link}. You may withdraw your consent or manage your preferences at any time by clicking the unsubscribe link at the bottom of any of our marketing emails, or
+          by emailing us at {insert customer support email address}.</div>
+      </div>
     </div>
     </div>
     <div class="klaviyo_messages">
@@ -41,10 +24,70 @@
       <div class="error_message" style="display:none;"></div>
     </div>
     <div class="klaviyo_form_actions">
-      <button type="submit" class="klaviyo_submit_button">Subscribe 5</button>
-    </div>
-  </form> -->
+      <button type="submit" class="klaviyo_submit_button">Subscribe</button> </div>
+  </form>
+  <style type="text/css">
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID,
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID {
+      font-family: "Helvetica Neue", Arial;
+    }
 
-</body>
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID .klaviyo_helptext,
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID .klaviyo_helptext {
+      font-family: "Helvetica Neue", Arial;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 
-</html>
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID .klaviyo_gdpr_text,
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID .klaviyo_gdpr_text {
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID label,
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID label {
+      color: #222;
+    }
+
+    .klaviyo_styling .klaviyo_field_group .klaviyo_form_actions {
+      text-align: left;
+    }
+
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID input[type=checkbox]+label,
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID input[type=checkbox]+label {
+      display: inline;
+      font-weight: normal;
+      padding-left: 5px;
+    }
+
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID input[type=text],
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID input[type=email],
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID input[type=text],
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID input[type=email] {
+      border-radius: 2px;
+    }
+
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID .klaviyo_submit_button,
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID .klaviyo_submit_button {
+      background-color: #0064cd;
+      border-radius: 2px;
+    }
+
+    .klaviyo_styling.klaviyo_gdpr_embed_LIST_ID .klaviyo_submit_button:hover,
+    .klaviyo_condensed_styling.klaviyo_gdpr_embed_LIST_ID .klaviyo_submit_button:hover {
+      background-color: #0064cd;
+    }
+  </style>
+  <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+  <script type="text/javascript">
+    KlaviyoSubscribe.attachToForms('#email_signup', {
+      hide_form_on_success: true,
+      extra_properties: {
+        $source: '$embed',
+        $method_type: "Klaviyo Form",
+        $method_id: 'embed',
+        $consent_version: 'Embed default text'
+      }
+    });
+  </script>
